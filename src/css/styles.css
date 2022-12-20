@@ -12,9 +12,64 @@ body {
   line-height: 1.5;
 }
 
+/* img {
+  display: block;
+  margin: 0px;
+} */
+
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
 #search-box {
   font: inherit;
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+
+.flag-and-name {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.flag {
+  display: block;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.item-name {
+  font-weight: 700;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.country-item {
+  display: flex;
+  align-items: center;
+}
+
+.flag-list {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 5px;
 }
