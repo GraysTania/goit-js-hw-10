@@ -1,19 +1,16 @@
 import './css/styles.css';
 import debounce from 'lodash.debounce';
 import { fetchCountries } from './js/fetchCountries';
+import { refs } from './js/refs.js';
 
 const DEBOUNCE_DELAY = 300;
 
-const refInput = document.querySelector('#search-box');
-const refInfo = document.querySelector('.country-info');
-const refList = document.querySelector('.country-list');
-
-refInput.addEventListener(
+refs.input.addEventListener(
   'input',
   debounce(event => {
     let countryInput = event.target.value.trim();
-    refList.innerHTML = '';
-    refInfo.innerHTML = '';
+    refs.list.innerHTML = '';
+    refs.info.innerHTML = '';
     if (countryInput === '') {
       return;
     }

@@ -1,12 +1,5 @@
 import Notiflix from 'notiflix';
-
-const refs = {
-  info: document.querySelector('.country-info'),
-  list: document.querySelector('.country-list'),
-};
-
-// const refInfo = document.querySelector('.country-info');
-// const refList = document.querySelector('.country-list');
+import { refs } from '../js/refs.js';
 
 export function fetchCountries(name) {
   fetch(
